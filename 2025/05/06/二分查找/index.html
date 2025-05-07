@@ -221,7 +221,7 @@
 </ul>
 <h2 id="思路-1"><a href="#思路-1" class="headerlink" title="思路"></a>思路</h2><p>根据上一题，如果题目要求是在排序数组中寻找是否存在一个目标值，那么直接利用二分法可在 <code>O(log n)</code> 的时间内找到是否存在目标值。</p>
 <p>但这题还多了个额外的条件，即 <code>target</code> 如果不在数组中的时候需要返回按顺序插入的位置。我们只需要对二分法的标准模版稍作修改即可。</p>
-<p>假设需要插入的位置是 <code>pos</code> ，则一定满足：<br>$$<br>nums[pos−1] &lt; target ≤ nums[pos]<br>$$</p>
+<p>假设需要插入的位置是 <code>pos</code> ，则一定满足：<br>$$<br>\text{nums[pos-1]} &lt; \text{target} \le \text{nums[pos]}<br>$$</p>
 <p>因为数组 <code>nums</code> 为无重复元素的升序数组，所以数组中最多只会有一个元素等于 <code>target</code> 。</p>
 <p><strong>问题可以转化为：找到数组中找到第一个大于等于 <code>target</code> 元素的位置。</strong></p>
 <p>问题转化到这里，直接套用二分法即可，不断用二分法逼近查找第一个大于等于 target 的下标 。</p>
