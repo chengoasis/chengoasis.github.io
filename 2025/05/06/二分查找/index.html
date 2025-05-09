@@ -289,7 +289,7 @@
 </blockquote>
 <p><strong>提示：</strong></p>
 <ul>
-<li>$1 \le {num} \le 2^{31} - 1$</li>
+<li>$0 \le {num} \le 2^{31} - 1$</li>
 </ul>
 <h2 id="思路-3"><a href="#思路-3" class="headerlink" title="思路"></a>思路</h2><p>根据题目意思，最终的结果 <code>ans</code> 就是<strong>满足 $k^2 \le x$ 的最大 <code>k</code> 值</strong>。</p>
 <p>所以我们对k可以进行二分查找，二分查找的初始区间就是 <code>[0, x]</code> ,只需要比较中间元素 <code>mid</code> 的平方与 <code>x</code> 的大小关系，并通过比较的结果调整上下界的范围。</p>
