@@ -278,7 +278,7 @@
 </ul>
 <h1 id="LeetCode-69-x的平方根"><a href="#LeetCode-69-x的平方根" class="headerlink" title="LeetCode 69.x的平方根"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/sqrtx/description/">LeetCode 69.x的平方根</a></h1><h2 id="题目描述-3"><a href="#题目描述-3" class="headerlink" title="题目描述"></a>题目描述</h2><p>给你一个非负整数 <code>x</code> ，计算并返回 <code>x</code> 的 <strong>算术平方根</strong> 。</p>
 <p>由于返回类型是整数，结果只保留 <strong>整数部分</strong> ，小数部分将被 <strong>舍去 。</strong></p>
-<p>**注意：**不允许使用任何内置指数函数和算符，例如 <code>pow(x, 0.5)</code> 或者 <code>x ** 0.5</code> 。</p>
+<p><strong>注意：</strong> 不允许使用任何内置指数函数和算符，例如 <code>pow(x, 0.5)</code> 或者 <code>x ** 0.5</code> 。</p>
 <p><strong>示例 1:</strong></p>
 <blockquote>
 <p><strong>输入:</strong>  <code>x = 4</code><br><strong>输出:</strong>  <code>2</code></p>
@@ -289,7 +289,7 @@
 </blockquote>
 <p><strong>提示：</strong></p>
 <ul>
-<li>$0 \le {x} \le 2^{31} - 1$</li>
+<li>$0 \le {x} \le 2^{31}-1$</li>
 </ul>
 <h2 id="思路-3"><a href="#思路-3" class="headerlink" title="思路"></a>思路</h2><p>根据题目意思，最终的结果 <code>ans</code> 就是<strong>满足 $k^2 \le x$ 的最大 <code>k</code> 值</strong>。</p>
 <p>所以我们对k可以进行二分查找，二分查找的初始区间就是 <code>[0, x]</code> ,只需要比较中间元素 <code>mid</code> 的平方与 <code>x</code> 的大小关系，并通过比较的结果调整上下界的范围。</p>
