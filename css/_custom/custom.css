@@ -1,8 +1,8 @@
 #site-subtitle {
-  color: #fff;
-  font-size: 22px;
-  text-align: center;
-  margin-top: 10px;
+  color: #fff !important;
+  font-size: 22px !important;
+  text-align: center !important;
+  margin-top: 10px !important;
 }
 #subtitle.typed {
   display: inline-block;
