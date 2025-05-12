@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://chengoasis.top/images/tensors-cover.png">
 <meta property="article:published_time" content="2025-05-11T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-05-12T00:43:06.180Z">
+<meta property="article:modified_time" content="2025-05-12T00:55:06.932Z">
 <meta property="article:author" content="chengoasis">
 <meta property="article:tag" content="PyTorch">
 <meta property="article:tag" content="数据操作">
@@ -21,7 +21,7 @@
   "url": "http://chengoasis.top/2025/05/12/basic_knowledge/",
   "image": "http://chengoasis.top/images/tensors-cover.png",
   "datePublished": "2025-05-11T16:00:00.000Z",
-  "dateModified": "2025-05-12T00:43:06.180Z",
+  "dateModified": "2025-05-12T00:55:06.932Z",
   "author": [
     {
       "@type": "Person",
@@ -162,7 +162,7 @@
   isHighlightShrink: false,
   isToc: true,
   pageType: 'post'
-}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/images/IMG_7437.JPG" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span> home</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><span> archives</span></a></div><div class="menus_item"><a class="site-page" href="/categories"><span> categories</span></a></div><div class="menus_item"><a class="site-page" href="/tags"><span> tags</span></a></div><div class="menus_item"><a class="site-page" href="/about"><span> about</span></a></div><div class="menus_item"><a class="site-page" href="/contact"><span> contact</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/images/tensors-cover.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">chengoasis</span></a><a class="nav-page-title" href="/"><span class="site-name">PyTorch数据操作 - 《动手学深度学习》笔记</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span> home</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><span> archives</span></a></div><div class="menus_item"><a class="site-page" href="/categories"><span> categories</span></a></div><div class="menus_item"><a class="site-page" href="/tags"><span> tags</span></a></div><div class="menus_item"><a class="site-page" href="/about"><span> about</span></a></div><div class="menus_item"><a class="site-page" href="/contact"><span> contact</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">PyTorch数据操作 - 《动手学深度学习》笔记</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-05-11T16:00:00.000Z" title="发表于 2025-05-12 00:00:00">2025-05-12</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-05-12T00:43:06.180Z" title="更新于 2025-05-12 08:43:06">2025-05-12</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/PyTorch/">PyTorch</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="2-1-数据操作"><a href="#2-1-数据操作" class="headerlink" title="2.1.数据操作"></a>2.1.数据操作</h2><p>为了能够完成各种数据操作，需要某种方法来存储和操作数据：</p>
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/images/IMG_7437.JPG" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span> home</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><span> archives</span></a></div><div class="menus_item"><a class="site-page" href="/categories"><span> categories</span></a></div><div class="menus_item"><a class="site-page" href="/tags"><span> tags</span></a></div><div class="menus_item"><a class="site-page" href="/about"><span> about</span></a></div><div class="menus_item"><a class="site-page" href="/contact"><span> contact</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/images/tensors-cover.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">chengoasis</span></a><a class="nav-page-title" href="/"><span class="site-name">PyTorch数据操作 - 《动手学深度学习》笔记</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span> home</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><span> archives</span></a></div><div class="menus_item"><a class="site-page" href="/categories"><span> categories</span></a></div><div class="menus_item"><a class="site-page" href="/tags"><span> tags</span></a></div><div class="menus_item"><a class="site-page" href="/about"><span> about</span></a></div><div class="menus_item"><a class="site-page" href="/contact"><span> contact</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">PyTorch数据操作 - 《动手学深度学习》笔记</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-05-11T16:00:00.000Z" title="发表于 2025-05-12 00:00:00">2025-05-12</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-05-12T00:55:06.932Z" title="更新于 2025-05-12 08:55:06">2025-05-12</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/PyTorch/">PyTorch</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="2-1-数据操作"><a href="#2-1-数据操作" class="headerlink" title="2.1.数据操作"></a>2.1.数据操作</h2><p>为了能够完成各种数据操作，需要某种方法来存储和操作数据：</p>
 <ul>
 <li>获取数据</li>
 <li>将数据读入计算机后再进行处理</li>
@@ -178,7 +178,7 @@
 
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tensor([ <span class="number">0</span>,  <span class="number">1</span>,  <span class="number">2</span>,  <span class="number">3</span>,  <span class="number">4</span>,  <span class="number">5</span>,  <span class="number">6</span>,  <span class="number">7</span>,  <span class="number">8</span>,  <span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>])</span><br></pre></td></tr></table></figure>
 
 
@@ -186,19 +186,19 @@
 <p>通过张量的shape属性来访问张量（沿每个轴的长度）的形状。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x.shape</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>torch.Size([12])
 </code></pre>
 <p>通过张量的 numel 统计元素个数</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x.numel()</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>12
 </code></pre>
 <p>reshape可以把张量x从形状为（12,）的行转换为形状为（3,4）的矩阵。<br>这个新的张量包含转换与前面相同的值，它被看成一个3行4列的矩阵。要重点说明一下，虽然张量的形状发生了改变，但其元素值并没有改变。<br>注意，通过改变张量的形状，张量的大小不会改变。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x.reshape(<span class="number">3</span>, <span class="number">4</span>)</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>tensor([[ 0,  1,  2,  3],
         [ 4,  5,  6,  7],
         [ 8,  9, 10, 11]])
@@ -206,7 +206,7 @@
 <p>可以像上面一样进行手动指定每个维度来改变张量的形状。troch 提供了一个很便捷的方式，可以自动计算出维度。<br>通过来-1调用这个自动计算出维度的功能。也就是说我们可以用x.reshape(-1,4)或x.reshape(3,-1)来替换x.reshape(3,4)。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x.reshape(-<span class="number">1</span>,<span class="number">4</span>)</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>tensor([[ 0,  1,  2,  3],
         [ 4,  5,  6,  7],
         [ 8,  9, 10, 11]])
@@ -214,7 +214,7 @@
 <p>有时，我们希望使用全0、全1、其他常量，或者从选择性分配中随机采样的数字来初始化矩阵。<br>我们可以创建一个形状为（2,3,4）的张量，其中所有元素都设置为0。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">torch.zeros(<span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>)</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>tensor([[[0., 0., 0., 0.],
          [0., 0., 0., 0.],
          [0., 0., 0., 0.]],
@@ -226,7 +226,7 @@
 <p>也可以创建一个形状为(2,3,4)张量，其中所有元素都设置为1。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">torch.ones(<span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>)</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>tensor([[[1., 1., 1., 1.],
          [1., 1., 1., 1.],
          [1., 1., 1., 1.]],
@@ -238,7 +238,7 @@
 <p>有时我们想通过从某个特定的概率分布中随机采样来得到每个元素的值。<br>例如，当我们初始化分布来作为神经网络中的参数时，我们通常会随机初始化参数的值。下面创建一个形状为（3,4）的张量。其中每个元素都从均值为0、标准差为1的标准分布（正态分布）中随机采样。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">torch.randn(<span class="number">3</span>, <span class="number">4</span>)</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>tensor([[ 1.1306, -2.1668, -0.3121,  0.5374],
         [ 0.7269,  1.1178,  0.8274, -0.6745],
         [-0.3906, -0.8182, -0.6219,  1.8655]])
@@ -246,7 +246,7 @@
 <p>还可以通过提供包含数值的Python列表（或嵌套列表），来为所需张量中的每个元素赋予确定值。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">torch.tensor([[<span class="number">2</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">3</span>], [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>], [<span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]])</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>tensor([[2, 1, 4, 3],
         [1, 2, 3, 4],
         [4, 3, 2, 1]])
@@ -254,7 +254,7 @@
 <h3 id="2-1-2-运算符"><a href="#2-1-2-运算符" class="headerlink" title="2.1.2.运算符"></a>2.1.2.运算符</h3><p>对于任意具有相同形状的张量，常见的标准算术运算符（+、-、<em>、&#x2F;和</em>*）都可以被升级为按元素运算。 我们可以在同一形状的任意两个张量上调用按元素操作。 在下面的例子中，我们使用逗号来表示一个具有5个元素的元组，其中每个元素都是按元素操作的结果。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = torch.tensor([<span class="number">1.0</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">8</span>])</span><br><span class="line">y = torch.tensor([<span class="number">2</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">2</span>])</span><br><span class="line">x + y, x - y, x * y, x / y, x ** y</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>(tensor([ 3.,  4.,  6., 10.]),
  tensor([-1.,  0.,  2.,  6.]),
  tensor([ 2.,  4.,  8., 16.]),
@@ -264,14 +264,14 @@
 <p>求幂运算</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">torch.exp(x)</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>tensor([2.7183e+00, 7.3891e+00, 5.4598e+01, 2.9810e+03])
 </code></pre>
 <p>除了按元素计算外，我们还可以执行线性代数运算，包括向量点积和矩阵乘法。后面学习。</p>
 <p>可以把多个张量连结（concatenate）在一起，把它们端对端地叠起来形成一个更大的张量。我们只需要提供张量列表，并给出沿哪个轴连结。<br>下面的例子分别演示了当沿行（轴-0，形状的第一个元素） 和按列（轴-1，形状的第二个元素）连结两个矩阵时，会发生什么情况。<br>可以看到，第一个输出张量的轴-0长度（6）是两个输入张量轴-0长度的总和（3+3）；第二个输出张量的轴-1长度（8）是两个输入张量轴-1长度的总和（4+4）。<br>轴-0:行<br>轴-1:列</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">X = torch.arange(<span class="number">12</span>, dtype=torch.float32).reshape((<span class="number">3</span>,<span class="number">4</span>))</span><br><span class="line">Y = torch.tensor([[<span class="number">2.0</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">3</span>], [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>], [<span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]])</span><br><span class="line">X, Y</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>(tensor([[ 0.,  1.,  2.,  3.],
          [ 4.,  5.,  6.,  7.],
          [ 8.,  9., 10., 11.]]),
@@ -281,7 +281,7 @@
 </code></pre>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">torch.cat((X, Y), dim=<span class="number">0</span>), torch.cat((X, Y), dim=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>(tensor([[ 0.,  1.,  2.,  3.],
          [ 4.,  5.,  6.,  7.],
          [ 8.,  9., 10., 11.],
@@ -295,7 +295,7 @@
 <p>通过逻辑运算符构建二元张量。 以X &#x3D;&#x3D; Y为例：对于每个位置，若X和Y在该位置相等，则新张量中相应项的值为1。意味着逻辑语句X &#x3D;&#x3D; Y在该位置处为真，否则该位置为0。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">X == Y</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>tensor([[False,  True, False,  True],
         [False, False, False, False],
         [False, False, False, False]])
@@ -303,14 +303,14 @@
 <p>对张量中的所有元素进行求和，会产生一个单元素张量。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">X.<span class="built_in">sum</span>()</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>tensor(66.)
 </code></pre>
 <h3 id="2-1-3-广播机制"><a href="#2-1-3-广播机制" class="headerlink" title="2.1.3.广播机制"></a>2.1.3.广播机制</h3><p>在上面的部分中，看到了如何在相同形状的两个张量上执行按元素操作。在某些情况下，即使形状不同，我们仍然可以通过调用广播机制（broadcasting mechanism）来执行按元素操作。 这种机制的工作方式如下：<br>    1.通过适当复制元素来扩展一个或两个数组，以便在转换之后，两个张量具有相同的形状<br>    2.对生成的数组执行按元素操作</p>
 <p>在大多数情况下，我们将沿着数组中长度为1的轴（列）进行广播，如下例子：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = torch.arange(<span class="number">3</span>).reshape((<span class="number">3</span>, <span class="number">1</span>))</span><br><span class="line">b = torch.arange(<span class="number">2</span>).reshape((<span class="number">1</span>, <span class="number">2</span>))</span><br><span class="line">a, b</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>(tensor([[0],
          [1],
          [2]]),
@@ -319,7 +319,7 @@
 <p>由于a和b分别是3 * 1和 1 * 2 的矩阵，如果让它们相加，它们的形状不匹配。<br>我们将两个矩阵广播为一个更大的3 * 2的矩阵，如下所示：矩阵a将复制列，矩阵b将复制行，然后再按元素相加。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a + b</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>tensor([[0, 1],
         [1, 2],
         [2, 3]])
@@ -339,7 +339,7 @@
 <p>可以用[-1]选择最后一个元素，可以用[1:3]选择第二个元素到第三个元素（下标从0开始）</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">X[-<span class="number">1</span>], X[<span class="number">1</span>:<span class="number">3</span>]</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>(tensor([ 8.,  9., 10., 11.]),
  tensor([[ 4.,  5.,  6.,  7.],
          [ 8.,  9., 10., 11.]]))
@@ -347,7 +347,7 @@
 <p>除读取外，我们还可以通过指定索引来将元素写入矩阵。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">X[<span class="number">1</span>, <span class="number">2</span>] = <span class="number">9</span></span><br><span class="line">X</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>tensor([[ 0.,  1.,  2.,  3.],
         [ 4.,  5.,  9.,  7.],
         [ 8.,  9., 10., 11.]])
@@ -355,7 +355,7 @@
 <p>如果想为多个元素赋值相同的值，我们只需要索引所有元素，然后为它们赋值。<br>例如，[0:2, :]访问第1行到第2行，其中后面的一个“:”代表沿轴1（列）的所有元素。虽然我们讨论的是矩阵的索引，但这也适用于向量和超过2个维度的张量。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">X[<span class="number">0</span>:<span class="number">2</span>, :] = <span class="number">12</span></span><br><span class="line">X</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>tensor([[12., 12., 12., 12.],
         [12., 12., 12., 12.],
         [ 8.,  9., 10., 11.]])
@@ -363,39 +363,38 @@
 <h3 id="2-1-5-节省内存"><a href="#2-1-5-节省内存" class="headerlink" title="2.1.5.节省内存"></a>2.1.5.节省内存</h3><p>运行一些操作可能会导致为新结果分配内存。例如，如果用Y &#x3D; X + Y，我们将取消引用Y指向的张量，而是指向新分配的内存处的张量。<br>在下面的例子中，我们用Python的id()函数演示了这一点，它给我们提供了内存中引用对象的确切地址。<br>运行Y &#x3D; Y + X后，我们会发现id(Y)指向另一个位置。 <strong>这是因为Python首先计算Y + X，为结果分配新的内存，然后使Y指向内存中的这个新位置。</strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">before = <span class="built_in">id</span>(Y)</span><br><span class="line">Y = Y + X</span><br><span class="line">before == <span class="built_in">id</span>(Y)</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>False
 </code></pre>
 <p>将二者的地址打印出来可能更清楚，每次执行地址可能都不相同。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">before, <span class="built_in">id</span>(Y)</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>(5179447312, 5179525936)
 </code></pre>
 <p>这可能是不好的，原因有两个：<br>1.我们不想总是不必要地分配内存。在机器学习中，我们可能有数百兆的参数，并且在一秒内多次更新所有参数。通常情况下，我们希望原地执行这些更新；<br>2.如果我们不原地更新，其他引用仍然会指向旧的内存位置，这样我们的某些代码可能会无意中引用旧的参数。</p>
 <p>幸运的是，执行原地操作非常简单。 我们可以使用切片表示法将操作的结果分配给先前分配的数组，例如Y[:] &#x3D; <expression>。<br>为了说明这一点，我们首先创建一个新的矩阵Z，其形状与另一个Y相同， 使用zeros_like来分配一个全的块。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Z = torch.zeros_like(Y)   <span class="comment"># 形状和Y一样的，元素全为零的张量</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;id(Z):&#x27;</span>, <span class="built_in">id</span>(Z))</span><br><span class="line">Z[:] = X + Y</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;id(Z):&#x27;</span>, <span class="built_in">id</span>(Z))</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
 <pre><code>id(Z): 5179567296
 id(Z): 5179567296
 </code></pre>
 <p>如果在后续计算中没有重复使用X， 我们也可以使用X[:] &#x3D; X + Y或X +&#x3D; Y来减少操作的内存开销。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">before = <span class="built_in">id</span>(X)</span><br><span class="line"><span class="comment"># X = X + Y    False</span></span><br><span class="line">X += Y       </span><br><span class="line"><span class="built_in">id</span>(X) == before</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>True
 </code></pre>
 <h3 id="2-1-6-转换为其他Python对象"><a href="#2-1-6-转换为其他Python对象" class="headerlink" title="2.1.6.转换为其他Python对象"></a>2.1.6.转换为其他Python对象</h3><p>将深度学习框架定义的张量转换为NumPy张量（ndarray）很容易，反之也同样容易。<br>torch张量和numpy数组将共享它们的底层内存，就地操作更改一个张量也会同时更改另一个张量。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A = X.numpy()</span><br><span class="line">B = torch.tensor(A)</span><br><span class="line"><span class="built_in">type</span>(A), <span class="built_in">type</span>(B)</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>(numpy.ndarray, torch.Tensor)
 </code></pre>
 <p>要将大小为1的张量转换为Python标量，我们可以调用item函数或Python的内置函数。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a = torch.tensor([<span class="number">3.5</span>])</span><br><span class="line">a, a.item(), <span class="built_in">float</span>(a), <span class="built_in">int</span>(a)</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>(tensor([3.5000]), 3.5, 3.5, 3)
 </code></pre>
 <h3 id="2-1-7-小结"><a href="#2-1-7-小结" class="headerlink" title="2.1.7.小结"></a>2.1.7.小结</h3><ul>
@@ -404,49 +403,49 @@ id(Z): 5179567296
 <h3 id="2-1-8-练习"><a href="#2-1-8-练习" class="headerlink" title="2.1.8.练习"></a>2.1.8.练习</h3><p>1.运行本节中的代码。将本节中的条件语句X &#x3D;&#x3D; Y更改为X &lt; Y或X &gt; Y，然后看看你可以得到什么样的张量。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">X = torch.arange(<span class="number">12</span>).reshape(-<span class="number">1</span>,<span class="number">4</span>)</span><br><span class="line">X</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>tensor([[ 0,  1,  2,  3],
         [ 4,  5,  6,  7],
         [ 8,  9, 10, 11]])
 </code></pre>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Y = torch.tensor([[<span class="number">2.0</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">3</span>], [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>], [<span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]])</span><br><span class="line">Y</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>tensor([[2., 1., 4., 3.],
         [1., 2., 3., 4.],
         [4., 3., 2., 1.]])
 </code></pre>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">X == Y</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>tensor([[False,  True, False,  True],
         [False, False, False, False],
         [False, False, False, False]])
 </code></pre>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">X &lt; Y</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>tensor([[ True, False,  True, False],
         [False, False, False, False],
         [False, False, False, False]])
 </code></pre>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">X &gt; Y</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>tensor([[False, False, False, False],
         [ True,  True,  True,  True],
         [ True,  True,  True,  True]])
 </code></pre>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">X &gt;= Y</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>tensor([[False,  True, False,  True],
         [ True,  True,  True,  True],
         [ True,  True,  True,  True]])
 </code></pre>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">X &lt;= Y</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>tensor([[ True,  True,  True,  True],
         [False, False, False, False],
         [False, False, False, False]])
@@ -454,7 +453,7 @@ id(Z): 5179567296
 <p>2.用其他形状（例如三维张量）替换广播机制中按元素操作的两个张量。结果是否与预期相同？</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = torch.arange(<span class="number">3</span>).reshape((<span class="number">1</span>, <span class="number">3</span>, <span class="number">1</span>))</span><br><span class="line">b = torch.arange(<span class="number">12</span>).reshape((<span class="number">3</span>, <span class="number">1</span>, <span class="number">4</span>))</span><br><span class="line">a, b</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>(tensor([[[0],
           [1],
           [2]]]),
@@ -466,7 +465,7 @@ id(Z): 5179567296
 </code></pre>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a + b</span><br></pre></td></tr></table></figure>
 
-<p>输出：</p>
+
 <pre><code>tensor([[[ 0,  1,  2,  3],
          [ 1,  2,  3,  4],
          [ 2,  3,  4,  5]],
