@@ -1045,7 +1045,7 @@ id(Z): 5179567296
 <pre><code>tensor(5.)
 </code></pre>
 <p>深度学习中更经常地使用 $L_2$ 范数的平方，也会经常遇到 $L_1$ 范数，它表示为向量元素的绝对值之和:</p>
-<p>$$<br>| \mathbf{x} |<em>1 &#x3D; \sum</em>{i&#x3D;1}^n \left| x_i \right|<br>$$</p>
+<p>$$<br>\lVert \mathbf{x} \rVert_1 &#x3D; \sum_{i&#x3D;1}^{n} \left| x_i \right|<br>$$</p>
 <p>与 $L_2$ 范数相比， $L_1$ 范数受异常值的影响较小。为了计算 $L_1$ 范数，我们将绝对值函数和按元素求和组合起来。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">torch.<span class="built_in">abs</span>(u).<span class="built_in">sum</span>()   <span class="comment"># 是对张量 u 中每个元素的 绝对值 求和。</span></span><br></pre></td></tr></table></figure>
 
@@ -1055,9 +1055,9 @@ id(Z): 5179567296
 <pre><code>tensor(7.)
 </code></pre>
 <p>$L_2$ 范数和 $L_1$ 范数都是更一般的 $L_p$ 范数的特例：</p>
-<p>$$<br>| \mathbf{x} |<em>p &#x3D; \left( \sum</em>{i&#x3D;1}^n \left| x_i \right|^p \right)^{1&#x2F;p}<br>$$</p>
+<p>$$<br>\lVert \mathbf{x} \rVert_p &#x3D; \left( \sum_{i&#x3D;1}^{n} \left| x_i \right|^p \right)^{1&#x2F;p}<br>$$</p>
 <p>类似于向量的 $L_2$ 范数，[矩阵] $\mathbf{X} \in \mathbb{R}^{m \times n}$ 的 <strong>Frobenius 范数</strong>（Frobenius norm）是矩阵元素平方和的平方根，定义如下：</p>
-<p>$$<br>| \mathbf{X} |<em>F &#x3D; \left( \sum</em>{i&#x3D;1}^m \sum_{j&#x3D;1}^n x_{ij}^2 \right)^{1&#x2F;2}<br>$$</p>
+<p>$$<br>\lVert \mathbf{X} \rVert_F &#x3D; \left( \sum_{i&#x3D;1}^{m} \sum_{j&#x3D;1}^{n} x_{ij}^2 \right)^{1&#x2F;2}<br>$$</p>
 <p>Frobenius 范数满足与向量范数相同的所有性质，它就像是矩阵的 $L_2$ 范数，可以将矩阵视为一个展开的向量。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">torch.norm(torch.ones((<span class="number">4</span>, <span class="number">9</span>)))   <span class="comment"># torch.norm 默认计算的是整个张量的 L2 范数，即所有元素的平方和的平方根</span></span><br></pre></td></tr></table></figure>
 
