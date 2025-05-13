@@ -1035,7 +1035,7 @@ id(Z): 5179567296
 <p>这是有道理的。因为在大多数情况下，任何东西的最小的大小是0。最后一个性质要求范数最小为0，当且仅当向量全由0组成。</p>
 <p>$$<br>\forall i, (\mathbf{x})_i &#x3D; 0 \iff f(\mathbf{x}) &#x3D; 0<br>$$</p>
 <p>范数听起来很像距离的度量。欧几里得距离和毕达哥拉斯定理中的非负性概念和三角不等式可能会给出一些启发。<br>事实上，欧几里得距离是一个 $L_2$ 范数，假设 $n$ 维向量 $\mathbf{x}$ 中的元素是 $x_1,\ldots,x_n$ ，其 $L_2$ 范数是向量元素平方和的平方根</p>
-<p>$$<br>\begin{Vmatrix} \mathbf{x} \end{Vmatrix}<em>2 &#x3D; \sqrt{\sum</em>{i&#x3D;1}^{n} x_i^2}<br>$$</p>
+<p>$$<br>\lVert \mathbf{x} \rVert_2 &#x3D; \sqrt{\sum_{i&#x3D;1}^{n} x_i^2}<br>$$</p>
 <p>其中，在 $L_2$ 范数中常常省略下标 $2$ ，也就是说 $|\mathbf{x}|$ 等同于 $|\mathbf{x}|_2$ 。在代码中，我们可以按如下方式计算向量的 $L_2$ 范数。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">u = torch.tensor([<span class="number">3.0</span>, -<span class="number">4.0</span>])</span><br><span class="line">torch.norm(u)   <span class="comment"># 默认计算 L2 范数，即欧几里得范数</span></span><br></pre></td></tr></table></figure>
 
